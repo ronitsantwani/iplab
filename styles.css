@@ -1,87 +1,74 @@
-body, h1, h2, h3, p, table, ul, footer, a, audio, video {
+ /* Reset some default styles */
+ body, h1, p, img, ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     }
-    body {
-    font-family: 'Roboto', sans-serif;
-    background: url('background.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-    }
-    header {
+    /* Full page background */
+    .header {
+    position: relative;
     text-align: center;
-    margin-bottom: 30px;
+    color: white;
     }
-    header h1 {
-    font-size: 2.5em;
-    color: #e7ab5d;
-    margin-bottom: 10px;
+    .background-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(50%);
     }
-    header img {
+    .profile-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    }
+    .profile-img {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-    section {
-    background-color: rgba(255, 255, 255, 0.8); /
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid white;
     margin-bottom: 20px;
     }
-    section h2 {
-    font-size: 2em;
-    color: #e7ab5d;
-    margin-bottom: 15px;
-    position: relative;
-   }
-    section h2::before {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: #e7ab5d;
-    position: absolute;
-    left: 0;
-    bottom:-10px;
+    .name {
+    font-size: 2.2em;
+    font-weight: bold;
+   margin-bottom: 10px;
     }
-    table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+    .title {
+    font-size: 1.4em;
+    margin-bottom: 20px;
     }
-    table th, table td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
-    background-color: transparent; /
-    table th {
-    background-color: transparent;
-    color: #333;
+    .bio {
+    font-size: 1.2em;
+    margin-bottom: 30px;
     }
-    ul {
+    .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
     }
-    list-style-type: disc;
-    margin-left: 20px;
-    footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #e7ab5d;
-    color: #fff;
-    border-radius: 10px;
+    .icon img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
     }
-    footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-   }
-    footer a:hover {
-    text-decoration: underline;
+    .icon img:hover {
+    transform: scale(1.2);
     }
-    audio, video {
-    max-width: 100%;
-    border-radius: 10px;
-    display: block;
-    margin: 20px 0
+    /* New content sections */
+    .content {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    color: white;
+    }
+    .skills, .past-work {
+    margin-bottom: 50px;
+    }
+    .skills h2
+   

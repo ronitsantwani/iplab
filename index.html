@@ -3,61 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Company Home Page</title>
+<title>Profile Page</title>
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-<h1>AVATAR FASHIONS</h1>
-<img src="logo.png" alt="Company Logo" height="200">
-</header>
-<section>
-<h2>Company Details</h2>
-<table>
-<tr>
-<th>Address</th>
-<td>Plot No.21, R.C Marg, Chembur Colony,
-Chembur-400074</td>
-</tr>
-<tr>
-<th>Contact Information</th>
-<td>Phone: 8626036332<br>Email:avatarfashions@company.com</td>
-</tr>
-<tr>
-<th>Description</th>
-<td>We are a leading company in Clothes.</td>
-</tr>
-</table>
-</section>
-<section>
-<h2>Our Services</h2>
+<div class="container-fluid">
+<div class="header">
+<img src="background.jpg" alt="Background Image" class="background-img img-fluid">
+<div class="profile-container text-center">
+<img src="profile.jpg" alt="Profile Picture" class="profile-img img-fluid rounded-circle">
+<h1 class="name">Ronit Santwani</h1>
+<p class="title">Web Profile Page</p>
+<p class="bio">3rd year Engineering student with problem-solving skills, ability to
+perform well in a team, and a passion for coding.</p>
+<div class="social-icons justify-content-center">
+<a href="https://x.com/ronitsantwani" class="icon"><img src="x-icon.png" alt="X"></a>
+<a href="https://linkedin.com/in/ronitsantwani" class="icon"><img
+src="linkedin-icon.png" alt="LinkedIn"></a>
+<a href="https://github.com/ronitsantwani" class="icon"><img src="github-icon.png"
+alt="GitHub"></a>
+<a href="https://instagram.com/ronitsantwani" class="icon"><img
+src="instagram-icon.png" alt="Instagram"></a>
+</div>
+</div>
+</div>
+<div class="content">
+<section class="skills">
+<h2>Skills</h2>
 <ul>
-<li>Service 1: High-quality clothes</li>
-<li>Service 2: Customized Designs</li>
-<li>Service 3: Budget Friendly</li>
+<li>Programming Languages: Python, Java, C++</li>
+<li>Web Development: HTML, CSS, JavaScript</li>
+<li>Problem Solving: Data Structures, Algorithms</li>
+<li>Teamwork: Effective communication, Collaboration</li>
 </ul>
 </section>
-<section>
-<h2>Introduction Audio</h2>
-<audio controls>
-<source src="intro.mp3" type="audio/mpeg">
-</audio>
+<section class="past-work">
+<h2>Past Work</h2>
+<p>NA</p>
 </section>
-<section>
-<h2>Promotional Video</h2>
-<video controls width="320" height="240">
-<source src="promo.mp4" type="video/mp4">
-</video>
-</section>
-<footer>
-<div>
-<a href="https://www.instagram.com/company"
-target="_blank">Instagram</a> |
-<a href="https://www.X.com/company"
-target="_blank">Twitter</a> |
-<a href="https://www.linkedin.com/company"
-target="_blank">LinkedIn</a>
 </div>
-</footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
